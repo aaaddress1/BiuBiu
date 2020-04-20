@@ -1,3 +1,4 @@
+# BiBiu, by aaaddress1@chroot.org
 from capstone import *
 from capstone.x86 import *
 import pefile
