@@ -1,5 +1,5 @@
-import r2pipe, pefile, os, random
-r2 = r2pipe.open('msgbox.exe')
+import r2pipe, pefile, os, random, sys
+r2 = r2pipe.open(sys.argv[1])
 r2.cmd('aaafl')
 
 def lookup_block(block_arr, addr: int):
@@ -31,8 +31,7 @@ if __name__ == "__main__":
 ██╔══██╗██║██║   ██║██╔══██╗██║██║   ██║
 ██████╔╝██║██║   ██║██████╔╝██║██║   ██║
 ██╔══██╗██║██║   ██║██╔══██╗██║██║   ██║
-██████╔╝██║╚██████╔╝██████╔╝██║╚██████╔╝
-╚═════╝ ╚═╝ ╚═════╝ ╚═════╝ ╚═╝ ╚═════╝ 
+██████╔╝██║╚██████╔╝██████╔╝██║╚██████╝
 > BiuBiu: Tool for Random-Walking, based on radare2.
                     / v1.1 by aaaddress1@chroot.org
 ''')
